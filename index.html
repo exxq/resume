@@ -7,85 +7,128 @@
     <meta name="keywords" content="tamerlan, cv, resume">
     <meta name="description" content="Это сайт - резюме Халилова Тамерлана">
     <title>Tamerlan resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    @media(max-width: 968px ) {
+                .info {
+                    display: block;
+                    text-align: center;
+                }
+            } 
+
+            @media(max-width: 968px) {
+                .form-row {
+                    display: block;
+                }
+
+                .form-row .form-g1 {
+                    margin-right: 0;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+    </style>
+
 </head>
 <body>
-    <img src="cv.jpg" width="150" alt="me">
-    <h1>Тамерлан Халилов</h1>
-    <p><strong>Я</strong> студент направления <strong>графический дизайн</strong> и <strong>обучаюсь программированию по курсу Владилена Минина</strong></p>
-    <p><strong>Я</strong> люблю <em>читать мангу</em>, <em>смотреть сериалы</em> и <em>обучаться чему-то новому</em></p>
 
-    
-    
-    <h4>Соц. сети</h4>
-    <p><a href="https://vk.com/exxqzme" target="_blank">VK</a></p>
-    <p><a href="https://web.telegram.org/k/" target="_blank">Telegram</a></p>
-
-    <h2>Мои Хобби</h2>
-    
-    <ol>
-        <li>Рисование</li>
-        <li>Спорт</li>
-        <li>Слушать музыку</li>
-        <li>Кушать</li>
-    </ol>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-    </thead>
-    </table>
-
-    <table>
-        <tbody>
-                <tr>
-                    <td>None</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>        
-
-                <tr>
-                    <td>None</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
+    <div class="container">
+            <div class="info">
+                <img class="img" src="cv.jpg" alt="me">
+                <div class="info-1">
+                    <h1>Тамерлан Халилов</h1>
+                    <p class="about"><strong>Я</strong> студент направления <strong>графический дизайн</strong> и <strong>обучаюсь программированию по курсу Владилена Минина</strong></p>
+                    <p class="about"><strong>Я</strong> люблю <em>читать мангу</em>, <em>смотреть сериалы</em> и <em>обучаться чему-то новому</em></p>
+            
+                    <h4>Мои социальные сети:</h4>
+                    <p class="social"><a href="https://vk.com/exxqzme" target="_blank">VK</a> | <a href="https://web.telegram.org/k/" target="_blank">Telegram</a></p>
+                </div>
+               
+            
+            </div> 
+            
+            
+        <div class="card">
+            <h2>Мои Хобби</h2>
+            
+            <ol>
+                <li>Рисование</li>
+                <li>Спорт</li>
+                <li>Слушать музыку</li>
+                <li>Кушать</li>
+            </ol>
         
-                
+            <table>
+                <thead>
                     <tr>
-                        <td>None</td>
-                        <td>-</td>
-                        <td>-</td>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
                     </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-<form action="/">
-    <div>
-
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
-    </div>
-    
-    <div>
-
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-
-        <label for="message">Сообщение:</label>
-        <br>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+            </thead>
+           
         
-    </div>
+                <tbody>
+                        <tr>
+                            <td>Спортмастер</td>
+                            <td>Продавец-консультант</td>
+                            <td>2021-сейчас</td>
+                        </tr>        
+        
+                        <tr>
+                            <td>None</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                
+                        
+                            <tr>
+                                <td>None</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                </tbody>
+            </table>
+        </div>
+        
+            <div class="contact">
+              <form class="form" action="/">
 
-    <input type="submit" value="Отправить">
-</form>
+                <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+
+                    <div class="form-g1">
+            
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    
+                    <div class="form-g1">
+                
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+
+                </div>
+
+                
+            
+                <div class="form-g1">
+            
+                    <label for="message">Сообщение:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                    
+                </div>
+            
+                <input class="btn" type="submit" value="Отправить!">
+            </form>
+            </div>
+        </div>
+
+    
 
 </body>
 </html>
